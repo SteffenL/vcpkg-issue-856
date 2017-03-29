@@ -13,8 +13,7 @@ popd
 ### Main application
 
 ```
-mkdir build
-cd build
+mkdir build && cd build
 cmake -G "Visual Studio 15 2017" -DCMAKE_TOOLCHAIN_FILE=external/vcpkg/scripts/buildsystems/vcpkg.cmake ..
-cmake --build .
+cmake --build . --config Release
 ```
